@@ -7,6 +7,4 @@ Repo to save common configuration files when using emulation with AttractMode
 
 ## Regular Expressions for creating romlists
 Open the main romlist file like mame.txt do a find for the roms you are after e.g. "street fighter". Use notepad to find all in the document and use the below regex to delete the "Line 12345: " text.
-    
     .*Line.\d+:.
-                
