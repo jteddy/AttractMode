@@ -14,7 +14,7 @@ Open the main romlist file like mame.txt do a find for the roms you are after e.
     
 ## AttractMode Commands
 
-Generate a ROM list
+Generate a ROM list. I received errors when mame had admin privliges and attract-console didn't.
     
     attract-console --build-romlist mame-groovy-229 --full
     
