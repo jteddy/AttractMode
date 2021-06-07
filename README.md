@@ -39,3 +39,12 @@ Open the main romlist file like mame.txt do a find for the roms you are after e.
 Generate a ROM list. I received errors when mame had admin privliges and attract-console didn't.
     
     attract-console --build-romlist mame-groovy-229 --full
+    
+ # GroovyArcade
+ 
+ ## Common Commands
+ sudo pacman -Sy
+ 
+ sudo pacman -S unzip
+ 
+ sudo mount /dev/sdb2 /media/arcade/
