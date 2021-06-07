@@ -16,5 +16,5 @@ Open the main romlist file like mame.txt do a find for the roms you are after e.
 
 Generate a ROM list
     
-attract-console --build-romlist mame-groovy-229 --full
+    attract-console --build-romlist mame-groovy-229 --full
     
