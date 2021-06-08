@@ -48,3 +48,6 @@ Generate a ROM list. I received errors when mame had admin privliges and attract
  sudo pacman -S unzip
  
  sudo mount /dev/sdb2 /media/arcade/
+ 
+ /etc/fstab
+ /dev/sdb2               /mnt/arcade     ntfs-3g         uid=arcade,gid=arcade   0 0
