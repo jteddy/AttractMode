@@ -39,7 +39,7 @@ attract --build-romlist MAME --full
 
 I don't want to copy the full MAME merged set to my drive (37,978 at this time of writing). There are numerous ROMs I will never play on my machine such as mechanical, gambling etc.
 
-Attract Format
+AttractMode Column Name & Descriptions
 
 - Name - name of the rom Ex. pacman.zip
 - Title - The name you want to show in the list Ex. Pac-Man
@@ -76,7 +76,7 @@ datutil kept crashing on Win10 and onto plan B.
 
 **Excel**
 
-The con is that this process is not repeatable. I removed the below categories reducing the rom count to 8,664 total. That is 3,248 ROMs that are not cloned. Approx 15Gb total without CHD's
+I found the best approach was to create a list of all the ROMs that I wanted deleted. This will save about 50GB of disk space and get rid of a lot of waste.
 
 **Remove**
 
@@ -91,7 +91,7 @@ The con is that this process is not repeatable. I removed the below categories r
 - Players
   - non-arcade
 
-### Copying the needed ROMs over
+### Deleting the uneeded ROMs over
 
 I captured the filenames of the list of ROMs I need. Use this list to copy the ROMs to my chosen directory.
 
@@ -104,10 +104,12 @@ As I just had the filenames I needed to add the .zip extension to the list. I di
 To copy the files I just used the command prompt
 
 ```
-for /f %n in (files.txt) do copy "%n" "E:\arcade\roms"
+for /f %n in (copy_files.txt) do cp "%n" "E:\arcade\ROMVault_V3.2.5\RomRoot"
 ```
 
-As this was a merged set there were numerous *The system cannot find the file specified.* error messages. I could have created the list without parent roms listed for this.
+```
+for /f %i in (delete_files.txt) do del %i
+```
 
 ### Create the MAME DAT File
 
