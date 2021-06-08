@@ -89,7 +89,7 @@ I found the best approach was to create a list of all the ROMs that I wanted del
 - Category
   - casino, medal, rhythm, slot machine, utilities, whac-a-mole, pachinko
 - Players
-  - non-arcade
+  - non-arcade, Pinball,
 
 ### Deleting the uneeded ROMs over
 
